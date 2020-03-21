@@ -1,0 +1,97 @@
+
+#ifndef ATMO_TRIGGER_HANDLER_H
+#define ATMO_TRIGGER_HANDLER_H
+
+#include "atmosphere_platform.h"
+#include "../atmo/core.h"
+
+#ifdef __cplusplus
+	extern "C"{
+#endif
+
+#define ATMO_TRIGGER(ELEMENT, NAME) ATMO_ ## ELEMENT ## _TRIGGER_  ## NAME
+
+void ATMO_TriggerHandler(unsigned int triggerHandleId, ATMO_Value_t *value);
+
+#define ATMO_Interval_TRIGGER_triggered 0x1
+#define ATMO_Interval_TRIGGER_interval 0x2
+#define ATMO_BME680_TRIGGER_triggered 0x3
+#define ATMO_BME680_TRIGGER_temperatureRead 0x4
+#define ATMO_BME680_TRIGGER_humidityRead 0x5
+#define ATMO_BME680_TRIGGER_pressureRead 0x6
+#define ATMO_BME680_TRIGGER_gasResistanceRead 0x7
+#define ATMO_EmbeddedBHI160_TRIGGER_triggered 0x8
+#define ATMO_EmbeddedBHI160_TRIGGER_xAccelerationRead 0x9
+#define ATMO_EmbeddedBHI160_TRIGGER_yAccelerationRead 0xa
+#define ATMO_EmbeddedBHI160_TRIGGER_zAccelerationRead 0xb
+#define ATMO_EmbeddedBHI160_TRIGGER_accelerationRead 0xc
+#define ATMO_EmbeddedBHI160_TRIGGER_angularRateRead 0xd
+#define ATMO_EmbeddedBHI160_TRIGGER_xAngularRateRead 0xe
+#define ATMO_EmbeddedBHI160_TRIGGER_yAngularRateRead 0xf
+#define ATMO_EmbeddedBHI160_TRIGGER_zAngularRateRead 0x10
+#define ATMO_EmbeddedBHI160_TRIGGER_orientationRead 0x11
+#define ATMO_EmbeddedBHI160_TRIGGER_xOrientationRead 0x12
+#define ATMO_EmbeddedBHI160_TRIGGER_yOrientationRead 0x13
+#define ATMO_EmbeddedBHI160_TRIGGER_zOrientationRead 0x14
+#define ATMO_NOA1305AmbientLight_TRIGGER_triggered 0x15
+#define ATMO_NOA1305AmbientLight_TRIGGER_ambientLightRead 0x16
+#define ATMO_BLETemp_TRIGGER_triggered 0x17
+#define ATMO_BLETemp_TRIGGER_written 0x18
+#define ATMO_BLETemp_TRIGGER_subscibed 0x19
+#define ATMO_BLETemp_TRIGGER_unsubscribed 0x1a
+#define ATMO_BLEPres_TRIGGER_triggered 0x1b
+#define ATMO_BLEPres_TRIGGER_written 0x1c
+#define ATMO_BLEPres_TRIGGER_subscibed 0x1d
+#define ATMO_BLEPres_TRIGGER_unsubscribed 0x1e
+#define ATMO_BLEHumid_TRIGGER_triggered 0x1f
+#define ATMO_BLEHumid_TRIGGER_written 0x20
+#define ATMO_BLEHumid_TRIGGER_subscibed 0x21
+#define ATMO_BLEHumid_TRIGGER_unsubscribed 0x22
+#define ATMO_BLEAccX_TRIGGER_triggered 0x23
+#define ATMO_BLEAccX_TRIGGER_written 0x24
+#define ATMO_BLEAccX_TRIGGER_subscibed 0x25
+#define ATMO_BLEAccX_TRIGGER_unsubscribed 0x26
+#define ATMO_BLEAccY_TRIGGER_triggered 0x27
+#define ATMO_BLEAccY_TRIGGER_written 0x28
+#define ATMO_BLEAccY_TRIGGER_subscibed 0x29
+#define ATMO_BLEAccY_TRIGGER_unsubscribed 0x2a
+#define ATMO_BLEAccZ_TRIGGER_triggered 0x2b
+#define ATMO_BLEAccZ_TRIGGER_written 0x2c
+#define ATMO_BLEAccZ_TRIGGER_subscibed 0x2d
+#define ATMO_BLEAccZ_TRIGGER_unsubscribed 0x2e
+#define ATMO_BLELight_TRIGGER_triggered 0x2f
+#define ATMO_BLELight_TRIGGER_written 0x30
+#define ATMO_BLELight_TRIGGER_subscibed 0x31
+#define ATMO_BLELight_TRIGGER_unsubscribed 0x32
+#define ATMO_LessLightLevel_TRIGGER_triggered 0x33
+#define ATMO_LessLightLevel_TRIGGER_conditionTrue 0x34
+#define ATMO_LessLightLevel_TRIGGER_conditionFalse 0x35
+#define ATMO_LessLightLevel_TRIGGER_invalidType 0x36
+#define ATMO_GreatLightLevel_TRIGGER_triggered 0x37
+#define ATMO_GreatLightLevel_TRIGGER_conditionTrue 0x38
+#define ATMO_GreatLightLevel_TRIGGER_conditionFalse 0x39
+#define ATMO_GreatLightLevel_TRIGGER_invalidType 0x3a
+#define ATMO_Red1_TRIGGER_triggered 0x3b
+#define ATMO_Red1_TRIGGER_stateSet 0x3c
+#define ATMO_Red1_TRIGGER_read 0x3d
+#define ATMO_Red1_TRIGGER_toggled 0x3e
+#define ATMO_Red1_TRIGGER_interrupt 0x3f
+#define ATMO_Green1_TRIGGER_triggered 0x40
+#define ATMO_Green1_TRIGGER_stateSet 0x41
+#define ATMO_Green1_TRIGGER_read 0x42
+#define ATMO_Green1_TRIGGER_toggled 0x43
+#define ATMO_Green1_TRIGGER_interrupt 0x44
+#define ATMO_Red2_TRIGGER_triggered 0x45
+#define ATMO_Red2_TRIGGER_stateSet 0x46
+#define ATMO_Red2_TRIGGER_read 0x47
+#define ATMO_Red2_TRIGGER_toggled 0x48
+#define ATMO_Red2_TRIGGER_interrupt 0x49
+#define ATMO_Green2_TRIGGER_triggered 0x4a
+#define ATMO_Green2_TRIGGER_stateSet 0x4b
+#define ATMO_Green2_TRIGGER_read 0x4c
+#define ATMO_Green2_TRIGGER_toggled 0x4d
+#define ATMO_Green2_TRIGGER_interrupt 0x4e
+#ifdef __cplusplus
+}
+#endif
+#endif

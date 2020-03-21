@@ -1,0 +1,166 @@
+
+#ifndef ATMO_PROPERTIES_H
+#define ATMO_PROPERTIES_H
+
+#ifdef __cplusplus
+	extern "C"{
+#endif
+
+#define ATMO_PROPERTY(ELEMENT, NAME) ATMO_ ## ELEMENT ## _PROPERTY_  ## NAME
+
+#define ATMO_Interval_PROPERTY_errorData NULL
+#define ATMO_Interval_PROPERTY_codeUserChanged NULL
+#define ATMO_Interval_PROPERTY_instance ATMO_DRIVERINSTANCE_INTERVAL_INTERVAL1
+#define ATMO_Interval_PROPERTY_time 2000
+
+#define ATMO_BME680_PROPERTY_errorData NULL
+#define ATMO_BME680_PROPERTY_codeUserChanged NULL
+#define ATMO_BME680_PROPERTY_i2cInstance ATMO_DRIVERINSTANCE_I2C_I2C1
+#define ATMO_BME680_PROPERTY_i2cAddress 0x76
+
+#define ATMO_EmbeddedBHI160_PROPERTY_errorData NULL
+#define ATMO_EmbeddedBHI160_PROPERTY_codeUserChanged NULL
+#define ATMO_EmbeddedBHI160_PROPERTY_i2cInstance ATMO_DRIVERINSTANCE_I2C_I2C1
+#define ATMO_EmbeddedBHI160_PROPERTY_gpioInstance ATMO_DRIVERINSTANCE_GPIO_GPIO1
+#define ATMO_EmbeddedBHI160_PROPERTY_intPin 9
+
+#define ATMO_NOA1305AmbientLight_PROPERTY_errorData NULL
+#define ATMO_NOA1305AmbientLight_PROPERTY_codeUserChanged NULL
+#define ATMO_NOA1305AmbientLight_PROPERTY_i2cInstance ATMO_DRIVERINSTANCE_I2C_I2C1
+
+#define ATMO_BLETemp_PROPERTY_errorData NULL
+#define ATMO_BLETemp_PROPERTY_codeUserChanged NULL
+#define ATMO_BLETemp_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLETemp_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLETemp_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae56"
+#define ATMO_BLETemp_PROPERTY_read true
+#define ATMO_BLETemp_PROPERTY_write true
+#define ATMO_BLETemp_PROPERTY_notify false
+#define ATMO_BLETemp_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLETemp_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLETemp_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLEPres_PROPERTY_errorData NULL
+#define ATMO_BLEPres_PROPERTY_codeUserChanged NULL
+#define ATMO_BLEPres_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLEPres_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLEPres_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae57"
+#define ATMO_BLEPres_PROPERTY_read true
+#define ATMO_BLEPres_PROPERTY_write true
+#define ATMO_BLEPres_PROPERTY_notify false
+#define ATMO_BLEPres_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEPres_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEPres_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLEHumid_PROPERTY_errorData NULL
+#define ATMO_BLEHumid_PROPERTY_codeUserChanged NULL
+#define ATMO_BLEHumid_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLEHumid_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLEHumid_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae58"
+#define ATMO_BLEHumid_PROPERTY_read true
+#define ATMO_BLEHumid_PROPERTY_write true
+#define ATMO_BLEHumid_PROPERTY_notify false
+#define ATMO_BLEHumid_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEHumid_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEHumid_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLEAccX_PROPERTY_errorData NULL
+#define ATMO_BLEAccX_PROPERTY_codeUserChanged NULL
+#define ATMO_BLEAccX_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLEAccX_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLEAccX_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae59"
+#define ATMO_BLEAccX_PROPERTY_read true
+#define ATMO_BLEAccX_PROPERTY_write true
+#define ATMO_BLEAccX_PROPERTY_notify false
+#define ATMO_BLEAccX_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccX_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccX_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLEAccY_PROPERTY_errorData NULL
+#define ATMO_BLEAccY_PROPERTY_codeUserChanged NULL
+#define ATMO_BLEAccY_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLEAccY_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLEAccY_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae5a"
+#define ATMO_BLEAccY_PROPERTY_read true
+#define ATMO_BLEAccY_PROPERTY_write true
+#define ATMO_BLEAccY_PROPERTY_notify false
+#define ATMO_BLEAccY_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccY_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccY_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLEAccZ_PROPERTY_errorData NULL
+#define ATMO_BLEAccZ_PROPERTY_codeUserChanged NULL
+#define ATMO_BLEAccZ_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLEAccZ_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLEAccZ_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae5b"
+#define ATMO_BLEAccZ_PROPERTY_read true
+#define ATMO_BLEAccZ_PROPERTY_write true
+#define ATMO_BLEAccZ_PROPERTY_notify false
+#define ATMO_BLEAccZ_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccZ_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLEAccZ_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_BLELight_PROPERTY_errorData NULL
+#define ATMO_BLELight_PROPERTY_codeUserChanged NULL
+#define ATMO_BLELight_PROPERTY_instance ATMO_DRIVERINSTANCE_BLE_BLE1
+#define ATMO_BLELight_PROPERTY_bleServiceUuid "5a26934d-a3ef-4b12-872d-db52484cae55"
+#define ATMO_BLELight_PROPERTY_bleCharacteristicUuid "5a26934d-a3ef-4b12-872d-db52484cae5c"
+#define ATMO_BLELight_PROPERTY_read true
+#define ATMO_BLELight_PROPERTY_write true
+#define ATMO_BLELight_PROPERTY_notify false
+#define ATMO_BLELight_PROPERTY_readDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLELight_PROPERTY_writeDataType ATMO_DATATYPE_FLOAT
+#define ATMO_BLELight_PROPERTY_notifyDataType ATMO_DATATYPE_FLOAT
+
+#define ATMO_LessLightLevel_PROPERTY_errorData NULL
+#define ATMO_LessLightLevel_PROPERTY_codeUserChanged NULL
+#define ATMO_LessLightLevel_PROPERTY_condition ATMO_LESS_THAN_EQUAL
+#define ATMO_LessLightLevel_PROPERTY_target "15"
+
+#define ATMO_GreatLightLevel_PROPERTY_errorData NULL
+#define ATMO_GreatLightLevel_PROPERTY_codeUserChanged NULL
+#define ATMO_GreatLightLevel_PROPERTY_condition ATMO_GREATER_THAN
+#define ATMO_GreatLightLevel_PROPERTY_target "15"
+
+#define ATMO_Red1_PROPERTY_errorData NULL
+#define ATMO_Red1_PROPERTY_codeUserChanged NULL
+#define ATMO_Red1_PROPERTY_instance ATMO_DRIVERINSTANCE_GPIO_GPIO1
+#define ATMO_Red1_PROPERTY_pin RSL10_LED_RED
+#define ATMO_Red1_PROPERTY_mode ATMO_GPIO_PinMode_Output_PushPull
+#define ATMO_Red1_PROPERTY_state ATMO_GPIO_PinState_Low
+#define ATMO_Red1_PROPERTY_interruptEnabled false
+#define ATMO_Red1_PROPERTY_interruptMode ATMO_GPIO_InterruptTrigger_None
+
+#define ATMO_Green1_PROPERTY_errorData NULL
+#define ATMO_Green1_PROPERTY_codeUserChanged NULL
+#define ATMO_Green1_PROPERTY_instance ATMO_DRIVERINSTANCE_GPIO_GPIO1
+#define ATMO_Green1_PROPERTY_pin RSL10_LED_GREEN
+#define ATMO_Green1_PROPERTY_mode ATMO_GPIO_PinMode_Output_PushPull
+#define ATMO_Green1_PROPERTY_state ATMO_GPIO_PinState_Low
+#define ATMO_Green1_PROPERTY_interruptEnabled false
+#define ATMO_Green1_PROPERTY_interruptMode ATMO_GPIO_InterruptTrigger_None
+
+#define ATMO_Red2_PROPERTY_errorData NULL
+#define ATMO_Red2_PROPERTY_codeUserChanged NULL
+#define ATMO_Red2_PROPERTY_instance ATMO_DRIVERINSTANCE_GPIO_GPIO1
+#define ATMO_Red2_PROPERTY_pin RSL10_LED_RED
+#define ATMO_Red2_PROPERTY_mode ATMO_GPIO_PinMode_Output_PushPull
+#define ATMO_Red2_PROPERTY_state ATMO_GPIO_PinState_Low
+#define ATMO_Red2_PROPERTY_interruptEnabled false
+#define ATMO_Red2_PROPERTY_interruptMode ATMO_GPIO_InterruptTrigger_None
+
+#define ATMO_Green2_PROPERTY_errorData NULL
+#define ATMO_Green2_PROPERTY_codeUserChanged NULL
+#define ATMO_Green2_PROPERTY_instance ATMO_DRIVERINSTANCE_GPIO_GPIO1
+#define ATMO_Green2_PROPERTY_pin RSL10_LED_GREEN
+#define ATMO_Green2_PROPERTY_mode ATMO_GPIO_PinMode_Output_PushPull
+#define ATMO_Green2_PROPERTY_state ATMO_GPIO_PinState_Low
+#define ATMO_Green2_PROPERTY_interruptEnabled false
+#define ATMO_Green2_PROPERTY_interruptMode ATMO_GPIO_InterruptTrigger_None
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

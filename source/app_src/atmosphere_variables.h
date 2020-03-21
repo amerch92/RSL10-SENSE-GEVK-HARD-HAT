@@ -1,0 +1,29 @@
+
+#ifndef ATMO_VARIABLES_H
+#define ATMO_VARIABLES_H
+
+#ifdef __cplusplus
+	extern "C"{
+#endif
+
+#define ATMO_VARIABLE(ELEMENT, NAME) ATMO_ ## ELEMENT ## _VARIABLE_ ## NAME
+
+static ATMO_BLE_Handle_t ATMO_BLETemp_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLETemp_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLEPres_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLEPres_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLEHumid_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLEHumid_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccX_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccX_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccY_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccY_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccZ_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLEAccZ_VARIABLE_bleCharacteristicHandle;
+static ATMO_BLE_Handle_t ATMO_BLELight_VARIABLE_bleServiceHandle;
+static ATMO_BLE_Handle_t ATMO_BLELight_VARIABLE_bleCharacteristicHandle;
+
+#ifdef __cplusplus
+}
+#endif
+#endif
